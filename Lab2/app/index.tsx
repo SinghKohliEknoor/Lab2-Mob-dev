@@ -5,14 +5,15 @@ export default function Home() {
     return (
       <View style={styles.container}>
         <Text style={styles.text}>Welcome to the new app</Text>
-        <View>
+    <View style={{backgroundColor: "blue", flex: 0.5, alignItems: 'center', justifyContent: "center"}}>
           <TouchableOpacity onPress={()=>{alert("Alert Button pressed")}}>
             <Text style={styles.buttonstyle}>Alert</Text>
           </TouchableOpacity>
 
         
         </View>
-        <List/>
+        <View style={{flex:0.5, alignItems: "flex-start", justifyContent: "flex-start"}}> <List/></View>
+       
       </View>
       
     );
