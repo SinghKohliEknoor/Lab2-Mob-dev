@@ -6,12 +6,13 @@ export default function Home() {
       <View style={styles.container}>
         <Text style={styles.text}>Welcome to the new app</Text>
         <View>
-        <TouchableOpacity onPress={()=>{alert("Alert Button pressed")}}>
-          <Text style={styles.buttonstyle}>Alert</Text>
-        </TouchableOpacity>
+          <TouchableOpacity onPress={()=>{alert("Alert Button pressed")}}>
+            <Text style={styles.buttonstyle}>Alert</Text>
+          </TouchableOpacity>
 
-        <List />
-      </View>
+        
+        </View>
+        <List/>
       </View>
       
     );
@@ -20,9 +21,11 @@ export default function Home() {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
+      marginTop:20,
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
+      
     },
     buttonstyle: {
       alignSelf:'center',
@@ -32,16 +35,19 @@ export default function Home() {
       color: 'white',
       backgroundColor: 'red',
       borderRadius:14,
+      
     },
     text:{
     fontSize:18,
     color: "blue",
     fontWeight:'bold',
     textDecorationLine:'underline',
-    },welcomeText: {
+    },
+    welcomeText: {
+      verticalAlign:'middle',
       fontSize: 20,
       fontWeight: 'bold',
-      marginBottom: 20,
+      
     },
     liststyling:{
 

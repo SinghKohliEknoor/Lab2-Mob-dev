@@ -26,8 +26,11 @@ const List = () => {
 
 const styles = StyleSheet.create({
   listContainer: {
-    marginTop: 20,
-    paddingHorizontal:20,
+    flex:1,
+    flexDirection:'row',
+    
+    paddingHorizontal:10,
+    alignItems:'center',
   },
   item: {
     padding: 15,
@@ -37,7 +40,7 @@ const styles = StyleSheet.create({
     width: '80%',
   },
   text: {
-    fontSize: 18,
+    fontSize: 10,
   },
 });
 
